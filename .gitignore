@@ -31,12 +31,15 @@ dist/
 .DS_Store
 Thumbs.db
 
+# Spec files 
+*.spec
 
 # PDF outputs (optional)
 *.pdf
 
 # Compiled files
 *.exe
+
 
 *.svg text
 
@@ -51,3 +54,7 @@ Thumbs.db
 # Windows scripts
 *.bat text eol=crlf
 *.cmd text eol=crlf
+=======
+#logs
+logs/
+
