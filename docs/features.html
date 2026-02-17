@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Smart Timetable Optimizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Smart Timetable</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html" class="active">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="documentation.html">Docs</a></li>
+                    <li><a href="download.html" class="download-link">Download</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Features Hero -->
+    <section class="features-hero">
+        <div class="container">
+            <h1>Powerful Features for Efficient Scheduling</h1>
+            <p>Everything you need to create perfect timetables automatically</p>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="core-features">
+        <div class="container">
+            <div class="feature-row">
+                <div class="feature-image">
+                    <img src="images/features/ai-optimization.svg" alt="AI Optimization">
+                </div>
+                <div class="feature-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-brain"></i> Core Feature
+                    </div>
+                    <h2>AI-Powered Optimization</h2>
+                    <p>
+                        Leverage Google OR-Tools' constraint programming solver to generate optimal timetables 
+                        that satisfy all requirements. The AI automatically handles complex scenarios:
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Resolves teacher and room conflicts automatically</li>
+                        <li><i class="fas fa-check"></i> Balances course distribution across days</li>
+                        <li><i class="fas fa-check"></i> Minimizes idle periods and gaps</li>
+                        <li><i class="fas fa-check"></i> Optimizes for both hard and soft constraints</li>
+                        <li><i class="fas fa-check"></i> Generates solutions in seconds, not hours</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-row reverse">
+                <div class="feature-image">
+                    <img src="images/features/constraints.svg" alt="Constraint Management">
+                </div>
+                <div class="feature-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-sliders-h"></i> Flexibility
+                    </div>
+                    <h2>Advanced Constraint Management</h2>
+                    <p>
+                        Define complex scheduling rules with ease. The system supports two types of constraints:
+                    </p>
+                    <div class="constraint-types">
+                        <div class="constraint-box">
+                            <h4><i class="fas fa-exclamation-circle"></i> Hard Constraints</h4>
+                            <p>Must be satisfied - system will not generate timetable without meeting these</p>
+                            <ul>
+                                <li>Teacher availability windows</li>
+                                <li>Course-specific time requirements</li>
+                                <li>No overlapping classes</li>
+                            </ul>
+                        </div>
+                        <div class="constraint-box">
+                            <h4><i class="fas fa-star"></i> Soft Constraints</h4>
+                            <p>Preferred conditions - system tries to satisfy but can relax if needed</p>
+                            <ul>
+                                <li>Preferred teaching times</li>
+                                <li>Break period preferences</li>
+                                <li>Course spacing preferences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-image">
+                    <img src="images/features/multi-user.svg" alt="Multi-User System">
+                </div>
+                <div class="feature-content">
+                    <div class="feature-badge">
+                        <i class="fas fa-users"></i> Collaboration
+                    </div>
+                    <h2>Multi-User Role-Based System</h2>
+                    <p>Separate interfaces tailored for different users:</p>
+                    <div class="roles-grid">
+                        <div class="role-card">
+                            <i class="fas fa-user-tie"></i>
+                            <h4>Administrator</h4>
+                            <ul>
+                                <li>Full system access</li>
+                                <li>Manage teachers and courses</li>
+                                <li>Define global constraints</li>
+                                <li>Generate master timetables</li>
+                                <li>Export and distribute schedules</li>
+                            </ul>
+                        </div>
+                        <div class="role-card">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4>Teacher</h4>
+                            <ul>
+                                <li>Create personal courses</li>
+                                <li>Set availability constraints</li>
+                                <li>Generate individual schedules</li>
+                                <li>View history</li>
+                                <li>Export personal timetables</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Categories -->
+    <section class="feature-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Feature Set</h2>
+                <p>Everything you need in one powerful application</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Data Management -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Management</h3>
+                    </div>
+                    <ul>
+                        <li>Teacher profile management</li>
+                        <li>Course creation and editing</li>
+                        <li>Section and credit management</li>
+                        <li>Department organization</li>
+                        <li>Bulk import/export (CSV support)</li>
+                        <li>Data validation and error checking</li>
+                    </ul>
+                </div>
+
+                <!-- Generation & Optimization -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <i class="fas fa-magic"></i>
+                        <h3>Generation & Optimization</h3>
+                    </div>
+                    <ul>
+                        <li>One-click timetable generation</li>
+                        <li>Configurable time slots</li>
+                        <li>Lunch break management</li>
+                        <li>Multi-section support</li>
+                        <li>Real-time constraint checking</li>
+                        <li>Post-generation optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Export & Sharing -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <i class="fas fa-file-export"></i>
+                        <h3>Export & Sharing</h3>
+                    </div>
+                    <ul>
+                        <li>Professional PDF export</li>
+                        <li>Custom naming and metadata</li>
+                        <li>Print-ready formatting</li>
+                        <li>Multiple export formats</li>
+                        <li>Batch export capability</li>
+                        <li>Email integration ready</li>
+                    </ul>
+                </div>
+
+                <!-- Security & Privacy -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security & Privacy</h3>
+                    </div>
+                    <ul>
+                        <li>bcrypt password hashing</li>
+                        <li>Role-based access control</li>
+                        <li>100% offline operation</li>
+                        <li>No data collection</li>
+                        <li>Local database storage</li>
+                        <li>Secure authentication</li>
+                    </ul>
+                </div>
+
+                <!-- User Experience -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>User Experience</h3>
+                    </div>
+                    <ul>
+                        <li>Modern, intuitive interface</li>
+                        <li>Drag-and-drop editing</li>
+                        <li>Real-time validation feedback</li>
+                        <li>Keyboard shortcuts</li>
+                        <li>Dark mode support</li>
+                        <li>Responsive design</li>
+                    </ul>
+                </div>
+
+                <!-- History & Versioning -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <i class="fas fa-history"></i>
+                        <h3>History & Versioning</h3>
+                    </div>
+                    <ul>
+                        <li>Save multiple timetables</li>
+                        <li>Version tracking</li>
+                        <li>Compare different versions</li>
+                        <li>Restore previous timetables</li>
+                        <li>Audit trail</li>
+                        <li>Created by metadata</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h4>Performance</h4>
+                    <ul>
+                        <li><strong>Generation Speed:</strong> 5-20 seconds</li>
+                        <li><strong>Max Courses:</strong> 500+</li>
+                        <li><strong>Max Teachers:</strong> 200+</li>
+                        <li><strong>Max Constraints:</strong> 1000+</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>Compatibility</h4>
+                    <ul>
+                        <li><strong>Windows:</strong> 10, 11 (64-bit)</li>
+                        <li><strong>Linux:</strong> Ubuntu 18.04+</li>
+                        <li><strong>macOS:</strong> 10.14+</li>
+                        <li><strong>Database:</strong> SQLite, MySQL</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li><strong>RAM:</strong> 4GB minimum, 8GB recommended</li>
+                        <li><strong>Storage:</strong> 200MB</li>
+                        <li><strong>Display:</strong> 1280x720+</li>
+                        <li><strong>Internet:</strong> Not required</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience These Features Today</h2>
+                <p>Download and start creating optimized timetables in minutes</p>
+                <a href="download.html" class="btn btn-primary btn-xl">
+                    <i class="fas fa-download"></i> Download Now
+                    <span class="btn-subtitle">Windows • Linux • macOS</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Smart Timetable</span>
+                    </div>
+                    <p>Intelligent academic timetable generation powered by AI optimization.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sai Vardhan Kallempudi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
