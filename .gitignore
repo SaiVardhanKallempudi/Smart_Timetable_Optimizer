@@ -37,3 +37,17 @@ Thumbs.db
 
 # Compiled files
 *.exe
+
+*.svg text
+
+# Images (binary)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.exe binary
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf

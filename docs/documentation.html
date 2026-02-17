@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Smart Timetable Optimizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Smart Timetable</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="documentation.html" class="active">Docs</a></li>
+                    <li><a href="download.html" class="download-link">Download</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Hero -->
+    <section class="docs-hero">
+        <div class="container">
+            <h1>Documentation</h1>
+            <p>Everything you need to know to get started with Smart Timetable Optimizer</p>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="docSearch" placeholder="Search documentation...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Content -->
+    <section class="docs-content">
+        <div class="container">
+            <div class="docs-layout">
+                <!-- Sidebar -->
+                <aside class="docs-sidebar">
+                    <nav class="docs-nav">
+                        <h4>Getting Started</h4>
+                        <ul>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#first-login">First Login</a></li>
+                            <li><a href="#quick-start">Quick Start Guide</a></li>
+                        </ul>
+                        
+                        <h4>User Guides</h4>
+                        <ul>
+                            <li><a href="#admin-guide">Administrator Guide</a></li>
+                            <li><a href="#teacher-guide">Teacher Guide</a></li>
+                        </ul>
+                        
+                        <h4>Features</h4>
+                        <ul>
+                            <li><a href="#teachers">Managing Teachers</a></li>
+                            <li><a href="#courses">Managing Courses</a></li>
+                            <li><a href="#constraints">Setting Constraints</a></li>
+                            <li><a href="#generation">Generating Timetables</a></li>
+                            <li><a href="#export">Exporting to PDF</a></li>
+                        </ul>
+                        
+                        <h4>Advanced</h4>
+                        <ul>
+                            <li><a href="#database">Database Configuration</a></li>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Documentation -->
+                <main class="docs-main">
+                    <!-- Installation -->
+                    <article id="installation" class="doc-section">
+                        <h2><i class="fas fa-download"></i> Installation</h2>
+                        
+                        <h3>Windows</h3>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Download the executable</strong>
+                                <p>Go to the <a href="download.html">Download page</a> and click "Download for Windows"</p>
+                                <div class="code-block">
+                                    <code>SmartTimetable-v1.0.0-Windows.exe</code>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Run the application</strong>
+                                <p>Double-click the downloaded <code>.exe</code> file. No installation required!</p>
+                                <div class="note-box warning">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <p><strong>Windows Defender Warning:</strong> If Windows shows "Windows protected your PC", click "More info" → "Run anyway". This is normal for unsigned applications.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>First run</strong>
+                                <p>The application will create a database file (<code>smart_timetable.db</code>) in the same folder.</p>
+                            </li>
+                        </ol>
+
+                        <h3>Linux</h3>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Download the AppImage</strong>
+                                <div class="code-block">
+                                    <code>wget https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/releases/download/v1.0.0/SmartTimetable-v1.0.0-Linux.AppImage</code>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Make it executable</strong>
+                                <div class="code-block">
+                                    <code>chmod +x SmartTimetable-v1.0.0-Linux.AppImage</code>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Run the application</strong>
+                                <div class="code-block">
+                                    <code>./SmartTimetable-v1.0.0-Linux.AppImage</code>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <h3>macOS</h3>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Download the DMG file</strong>
+                                <p>From the <a href="download.html">Download page</a></p>
+                            </li>
+                            <li>
+                                <strong>Open the DMG</strong>
+                                <p>Double-click the <code>.dmg</code> file</p>
+                            </li>
+                            <li>
+                                <strong>Drag to Applications</strong>
+                                <p>Drag the Smart Timetable icon to your Applications folder</p>
+                            </li>
+                            <li>
+                                <strong>Allow in Security & Privacy</strong>
+                                <p>On first run, go to System Preferences → Security & Privacy → "Open Anyway"</p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <!-- First Login -->
+                    <article id="first-login" class="doc-section">
+                        <h2><i class="fas fa-sign-in-alt"></i> First Login</h2>
+                        
+                        <p>When you first run Smart Timetable Optimizer, you'll see the login screen.</p>
+                        
+                        <h3>Default Credentials</h3>
+                        <div class="credentials-box">
+                            <div class="credential">
+                                <strong>Username:</strong> <code>admin</code>
+                            </div>
+                            <div class="credential">
+                                <strong>Password:</strong> <code>admin123</code>
+                            </div>
+                        </div>
+
+                        <div class="note-box danger">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p><strong>Security Warning:</strong> Change the default password immediately after first login!</p>
+                        </div>
+
+                        <h3>Changing the Default Password</h3>
+                        <ol class="step-list">
+                            <li>Login with default credentials</li>
+                            <li>Go to <strong>Profile</strong> tab</li>
+                            <li>Click <strong>Change Password</strong></li>
+                            <li>Enter new password (minimum 8 characters)</li>
+                            <li>Save changes</li>
+                        </ol>
+                    </article>
+
+                    <!-- Quick Start -->
+                    <article id="quick-start" class="doc-section">
+                        <h2><i class="fas fa-rocket"></i> Quick Start Guide</h2>
+                        
+                        <p>Follow these steps to create your first timetable in minutes:</p>
+
+                        <div class="quick-steps">
+                            <div class="quick-step">
+                                <div class="step-num">1</div>
+                                <div class="step-content">
+                                    <h4>Add Teachers</h4>
+                                    <p>Navigate to <strong>Teacher Management</strong> tab</p>
+                                    <ul>
+                                        <li>Click "Create Teacher"</li>
+                                        <li>Fill in: username, full name, department</li>
+                                        <li>Click "Create"</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="quick-step">
+                                <div class="step-num">2</div>
+                                <div class="step-content">
+                                    <h4>Add Courses</h4>
+                                    <p>In <strong>Timetable Generator</strong> tab</p>
+                                    <ul>
+                                        <li>Enter course code (e.g., "CS101")</li>
+                                        <li>Enter course name (e.g., "Introduction to Programming")</li>
+                                        <li>Set section (e.g., "A")</li>
+                                        <li>Assign teacher (optional)</li>
+                                        <li>Click "Add"</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="quick-step">
+                                <div class="step-num">3</div>
+                                <div class="step-content">
+                                    <h4>Set Constraints (Optional)</h4>
+                                    <p>Define scheduling rules:</p>
+                                    <div class="code-block">
+                                        <code>CS101,A,Monday,P1-P3</code><br>
+                                        <code>MATH201,Tuesday,P2</code>
+                                    </div>
+                                    <p>Click "Add Constraints"</p>
+                                </div>
+                            </div>
+
+                            <div class="quick-step">
+                                <div class="step-num">4</div>
+                                <div class="step-content">
+                                    <h4>Generate Timetable</h4>
+                                    <p>Configure generation settings:</p>
+                                    <ul>
+                                        <li>Periods per day: 6</li>
+                                        <li>Lunch period: 4 (optional)</li>
+                                        <li>Time limit: 20 seconds</li>
+                                    </ul>
+                                    <p>Click <strong>"Generate"</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="quick-step">
+                                <div class="step-num">5</div>
+                                <div class="step-content">
+                                    <h4>Save & Export</h4>
+                                    <p>Once generated:</p>
+                                    <ul>
+                                        <li>Review the timetable</li>
+                                        <li>Edit if needed (double-click cells)</li>
+                                        <li>Click "Save Timetable"</li>
+                                        <li>Click "Export PDF"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Admin Guide -->
+                    <article id="admin-guide" class="doc-section">
+                        <h2><i class="fas fa-user-shield"></i> Administrator Guide</h2>
+                        
+                        <h3>Dashboard Overview</h3>
+                        <p>The admin dashboard has three main tabs:</p>
+                        <ul>
+                            <li><strong>Teacher Management:</strong> Create, edit, delete teacher profiles</li>
+                            <li><strong>Timetable Generator:</strong> Main workspace for creating timetables</li>
+                            <li><strong>Profile:</strong> Your account information</li>
+                        </ul>
+
+                        <h3 id="teachers">Managing Teachers</h3>
+                        
+                        <h4>Creating a Teacher</h4>
+                        <ol class="step-list">
+                            <li>Go to <strong>Teacher Management</strong> tab</li>
+                            <li>Click <strong>"Create Teacher"</strong></li>
+                            <li>Fill in the form:
+                                <ul>
+                                    <li><strong>Username:</strong> Unique login ID (e.g., "jsmith")</li>
+                                    <li><strong>Full Name:</strong> Display name (e.g., "John Smith")</li>
+                                    <li><strong>Password:</strong> Initial password (teacher can change later)</li>
+                                    <li><strong>Email:</strong> Contact email (optional)</li>
+                                    <li><strong>Phone:</strong> Contact number (optional)</li>
+                                    <li><strong>Department:</strong> Department name (optional)</li>
+                                </ul>
+                            </li>
+                            <li>Click <strong>"Create"</strong></li>
+                        </ol>
+
+                        <h4>Editing a Teacher</h4>
+                        <ol class="step-list">
+                            <li>Select teacher from the table</li>
+                            <li>Click <strong>"Edit Teacher"</strong></li>
+                            <li>Modify details</li>
+                            <li>Click <strong>"Save"</strong></li>
+                        </ol>
+
+                        <h4>Deleting a Teacher</h4>
+                        <div class="note-box warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p><strong>Warning:</strong> Deleting a teacher also removes their user account and associated data. This action cannot be undone.</p>
+                        </div>
+                        <ol class="step-list">
+                            <li>Select teacher from the table</li>
+                            <li>Click <strong>"Delete Teacher"</strong></li>
+                            <li>Confirm deletion</li>
+                        </ol>
+
+                        <h3 id="courses">Managing Courses</h3>
+                        
+                        <h4>Adding a Course</h4>
+                        <div class="code-example">
+                            <p><strong>Example:</strong></p>
+                            <ul>
+                                <li><strong>Course Code:</strong> CS101</li>
+                                <li><strong>Course Name:</strong> Introduction to Programming</li>
+                                <li><strong>Section:</strong> A</li>
+                                <li><strong>Teacher:</strong> John Smith (select from dropdown)</li>
+                            </ul>
+                        </div>
+
+                        <h4>Editing a Course</h4>
+                        <p>You can edit courses in two ways:</p>
+                        <ol>
+                            <li><strong>Inline editing:</strong> Double-click any cell in the course table</li>
+                            <li><strong>Edit button:</strong> Click "Edit" in the Actions column</li>
+                        </ol>
+
+                        <h3 id="constraints">Setting Constraints</h3>
+                        
+                        <h4>Constraint Format</h4>
+                        <p>Constraints are entered as comma-separated values:</p>
+                        
+                        <div class="constraint-examples">
+                            <h5>Format 1: Course, Section, Day, Period Range</h5>
+                            <div class="code-block">
+                                <code>CS101,A,Monday,P1-P3</code>
+                            </div>
+                            <p>Means: CS101 Section A must be scheduled on Monday during periods 1-3</p>
+
+                            <h5>Format 2: Course, Day, Period (Section = ALL)</h5>
+                            <div class="code-block">
+                                <code>MATH201,Tuesday,P2</code>
+                            </div>
+                            <p>Means: MATH201 (all sections) must be on Tuesday, period 2</p>
+
+                            <h5>Format 3: With Constraint Type</h5>
+                            <div class="code-block">
+                                <code>ENG301,A,Wednesday,P1-P2,Exact</code>
+                            </div>
+                            <p>Means: ENG301 Section A must be exactly on Wednesday P1-P2 (hard constraint)</p>
+                        </div>
+
+                        <h4>Constraint Types</h4>
+                        <ul>
+                            <li><strong>Hard:</strong> Must be satisfied (default)</li>
+                            <li><strong>Exact:</strong> Must be placed exactly in specified slots</li>
+                            <li><strong>Soft:</strong> Preferred but can be relaxed</li>
+                        </ul>
+                    </article>
+
+                    <!-- Teacher Guide -->
+                    <article id="teacher-guide" class="doc-section">
+                        <h2><i class="fas fa-chalkboard-teacher"></i> Teacher Guide</h2>
+                        
+                        <h3>Teacher Dashboard Overview</h3>
+                        <p>Teachers have a simplified interface with these tabs:</p>
+                        <ul>
+                            <li><strong>Profile:</strong> Your account information</li>
+                            <li><strong>Timetable Generator:</strong> Create personal timetables</li>
+                            <li><strong>History:</strong> View saved timetables</li>
+                            <li><strong>About:</strong> Application information</li>
+                        </ul>
+
+                        <h3>Creating Personal Courses</h3>
+                        <p>Teachers can create courses scoped to their account:</p>
+                        <ol class="step-list">
+                            <li>Go to <strong>Timetable Generator</strong> tab</li>
+                            <li>Scroll to "My Courses" section</li>
+                            <li>Enter course details</li>
+                            <li>Check "Published" to share with admin</li>
+                            <li>Click "Add Course"</li>
+                        </ol>
+
+                        <h3>Setting Personal Constraints</h3>
+                        <p>Define your availability and preferences:</p>
+                        <div class="code-block">
+                            <code>MyLab,Monday,P1-P2</code><br>
+                            <code>Tutorial,Wednesday,P4</code>
+                        </div>
+
+                        <h3>Generating Your Timetable</h3>
+                        <ol class="step-list">
+                            <li>Configure settings (periods, lunch, etc.)</li>
+                            <li>Choose whether to include admin courses</li>
+                            <li>Click "Generate"</li>
+                            <li>Review and save</li>
+                        </ol>
+                    </article>
+
+                    <!-- Generation -->
+                    <article id="generation" class="doc-section">
+                        <h2><i class="fas fa-magic"></i> Generating Timetables</h2>
+                        
+                        <h3>Configuration Options</h3>
+                        
+                        <h4>Periods per Day</h4>
+                        <p>Number of class periods in a day (typically 6-8)</p>
+                        <div class="note-box info">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>Tip:</strong> Most schools use 6-7 periods per day</p>
+                        </div>
+
+                        <h4>Lunch Period</h4>
+                        <p>Period number for lunch break (0 = no lunch break)</p>
+                        <p>Example: If lunch is during 4th period, set to 4</p>
+
+                        <h4>Start Time</h4>
+                        <p>When the school day begins (e.g., 9:00 AM)</p>
+
+                        <h4>Duration (minutes)</h4>
+                        <p>Length of each period in minutes (typically 45-60)</p>
+
+                        <h4>Time Limit</h4>
+                        <p>Maximum time solver can run (seconds). Default: 20</p>
+                        <ul>
+                            <li>Simple schedules: 10-20 seconds</li>
+                            <li>Complex schedules: 30-60 seconds</li>
+                        </ul>
+
+                        <h3>Understanding the Generated Timetable</h3>
+                        <p>The timetable is displayed as a grid:</p>
+                        <ul>
+                            <li><strong>Rows:</strong> Days of the week (Monday-Friday)</li>
+                            <li><strong>Columns:</strong> Period numbers</li>
+                            <li><strong>Cells:</strong> Course names/codes</li>
+                            <li><strong>LUNCH:</strong> Reserved lunch period</li>
+                            <li><strong>Free:</strong> No class scheduled</li>
+                        </ul>
+
+                        <h3>Editing the Timetable</h3>
+                        <p>You can manually edit generated timetables:</p>
+                        <ol class="step-list">
+                            <li>Double-click any cell</li>
+                            <li>Type new course name or "Free"</li>
+                            <li>Press Enter to save</li>
+                        </ol>
+                        <div class="note-box warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p><strong>Note:</strong> Manual edits may violate constraints. Validation warnings will appear if conflicts are detected.</p>
+                        </div>
+                    </article>
+
+                    <!-- Export -->
+                    <article id="export" class="doc-section">
+                        <h2><i class="fas fa-file-pdf"></i> Exporting to PDF</h2>
+                        
+                        <h3>Export Process</h3>
+                        <ol class="step-list">
+                            <li>Generate or load a timetable</li>
+                            <li>Click <strong>"Export PDF"</strong> button</li>
+                            <li>Choose save location</li>
+                            <li>Enter filename</li>
+                            <li>Click "Save"</li>
+                        </ol>
+
+                        <h3>PDF Content</h3>
+                        <p>The exported PDF includes:</p>
+                        <ul>
+                            <li>Timetable title</li>
+                            <li>Creation date and creator</li>
+                            <li>Complete timetable grid</li>
+                            <li>Time slot information</li>
+                            <li>Section information</li>
+                        </ul>
+
+                        <h3>Print Settings</h3>
+                        <p>The PDF is optimized for printing on standard paper (A4/Letter)</p>
+                        <ul>
+                            <li>Orientation: Landscape (for better fit)</li>
+                            <li>Margins: Standard</li>
+                            <li>Headers/Footers: Included</li>
+                        </ul>
+                    </article>
+
+                    <!-- Database -->
+                    <article id="database" class="doc-section">
+                        <h2><i class="fas fa-database"></i> Database Configuration</h2>
+                        
+                        <h3>Default: SQLite</h3>
+                        <p>By default, Smart Timetable uses SQLite (no configuration needed)</p>
+                        <ul>
+                            <li>Database file: <code>smart_timetable.db</code></li>
+                            <li>Location: Same folder as the application</li>
+                            <li>Portable: Can be copied/moved</li>
+                        </ul>
+
+                        <h3>Optional: MySQL</h3>
+                        <p>For multi-user environments, you can configure MySQL:</p>
+                        
+                        <h4>Steps:</h4>
+                        <ol class="step-list">
+                            <li>Install MySQL server</li>
+                            <li>Create a database:
+                                <div class="code-block">
+                                    <code>CREATE DATABASE smart_timetable;</code>
+                                </div>
+                            </li>
+                            <li>Edit <code>config.py</code>:
+                                <div class="code-block">
+<code>DB_CONFIG = {
+    "engine": "mysql",
+    "database": "smart_timetable",
+    "host": "127.0.0.1",
+    "user": "your_username",
+    "password": "your_password"
+}</code>
+                                </div>
+                            </li>
+                            <li>Run <code>init_db.py</code> to create tables</li>
+                        </ol>
+
+                        <h3>Backup & Restore</h3>
+                        
+                        <h4>SQLite Backup</h4>
+                        <p>Simply copy the <code>smart_timetable.db</code> file to a safe location</p>
+
+                        <h4>MySQL Backup</h4>
+                        <div class="code-block">
+                            <code>mysqldump -u username -p smart_timetable > backup.sql</code>
+                        </div>
+
+                        <h4>Restore</h4>
+                        <div class="code-block">
+                            <code>mysql -u username -p smart_timetable < backup.sql</code>
+                        </div>
+                    </article>
+
+                    <!-- Troubleshooting -->
+                    <article id="troubleshooting" class="doc-section">
+                        <h2><i class="fas fa-tools"></i> Troubleshooting</h2>
+                        
+                        <h3>Common Issues</h3>
+
+                        <div class="troubleshoot-item">
+                            <h4><i class="fas fa-times-circle"></i> Application Won't Start (Windows)</h4>
+                            <p><strong>Issue:</strong> "Windows protected your PC" message</p>
+                            <p><strong>Solution:</strong></p>
+                            <ol>
+                                <li>Click "More info"</li>
+                                <li>Click "Run anyway"</li>
+                                <li>Alternatively: Right-click .exe → Properties → Unblock → Apply</li>
+                            </ol>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h4><i class="fas fa-times-circle"></i> Database Error on Startup</h4>
+                            <p><strong>Issue:</strong> "Failed to connect to database"</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Delete <code>smart_timetable.db</code></li>
+                                <li>Restart application (will create fresh database)</li>
+                                <li>Or run <code>init_db.py</code> manually</li>
+                            </ul>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h4><i class="fas fa-times-circle"></i> Slow Timetable Generation</h4>
+                            <p><strong>Issue:</strong> Generation takes too long or times out</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Reduce number of constraints</li>
+                                <li>Increase time limit (Settings)</li>
+                                <li>Reduce number of courses</li>
+                                <li>Simplify constraint complexity</li>
+                            </ul>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h4><i class="fas fa-times-circle"></i> No Timetable Generated</h4>
+                            <p><strong>Issue:</strong> "No feasible solution found"</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Check for conflicting hard constraints</li>
+                                <li>Increase number of periods per day</li>
+                                <li>Remove some constraints temporarily</li>
+                                <li>Verify course data is correct</li>
+                            </ul>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h4><i class="fas fa-times-circle"></i> PDF Export Fails</h4>
+                            <p><strong>Issue:</strong> Error when exporting PDF</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Check write permissions to save location</li>
+                                <li>Ensure filename doesn't contain special characters</li>
+                                <li>Close any open PDF with same name</li>
+                                <li>Verify ReportLab is installed (if running from source)</li>
+                            </ul>
+                        </div>
+
+                        <h3>Getting Help</h3>
+                        <p>If you encounter issues not listed here:</p>
+                        <ul>
+                            <li><strong>GitHub Issues:</strong> <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/issues" target="_blank">Report a bug</a></li>
+                            <li><strong>Discussions:</strong> <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/discussions" target="_blank">Ask questions</a></li>
+                            <li><strong>Email:</strong> Contact developer (see About page)</li>
+                        </ul>
+                    </article>
+
+                    <!-- FAQ -->
+                    <article id="faq" class="doc-section">
+                        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                        
+                        <div class="faq-item">
+                            <h4>Is Smart Timetable Optimizer really free?</h4>
+                            <p>Yes! It's completely free and open source under the MIT License. No hidden costs, no subscriptions.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Does it require internet connection?</h4>
+                            <p>No. The application works 100% offline. All data is stored locally on your computer.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can I use it for my school/university?</h4>
+                            <p>Absolutely! It's designed for educational institutions of all sizes. No licensing required.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How many courses/teachers can it handle?</h4>
+                            <p>Tested with 500+ courses and 200+ teachers. Performance depends on hardware and constraint complexity.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can multiple people use it on the same computer?</h4>
+                            <p>Yes! The multi-user system supports multiple accounts (Admin and Teacher roles).</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can I customize the algorithm?</h4>
+                            <p>Yes! The source code is available on GitHub. You can modify the solver logic in <code>tools/solver_runner.py</code>.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Is my data secure?</h4>
+                            <p>Yes. All data is stored locally on your machine. Passwords are hashed with bcrypt. No data is sent to any server.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can I contribute to the project?</h4>
+                            <p>Yes! Contributions are welcome. Visit the <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer" target="_blank">GitHub repository</a> to get started.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What if I find a bug?</h4>
+                            <p>Please report it on <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/issues" target="_blank">GitHub Issues</a>. Include steps to reproduce and screenshots if possible.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can I request new features?</h4>
+                            <p>Yes! Open a feature request on <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/issues" target="_blank">GitHub Issues</a> or contribute directly.</p>
+                        </div>
+                    </article>
+
+                    <!-- End of Documentation -->
+                    <div class="doc-footer">
+                        <p>Can't find what you're looking for? <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/issues">Ask a question on GitHub</a></p>
+                        <p>Last updated: February 16, 2025</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Smart Timetable</span>
+                    </div>
+                    <p>Intelligent academic timetable generation powered by AI optimization.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sai Vardhan Kallempudi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Documentation search functionality
+        const searchInput = document.getElementById('docSearch');
+        const docSections = document.querySelectorAll('.doc-section');
+        
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                
+                docSections.forEach(section => {
+                    const text = section.textContent.toLowerCase();
+                    if (text.includes(query) || query === '') {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Smooth scroll for sidebar links
+        document.querySelectorAll('.docs-nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Update active state
+                    document.querySelectorAll('.docs-nav a').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
