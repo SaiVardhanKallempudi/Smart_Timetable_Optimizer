@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Smart Timetable Optimizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Smart Timetable</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="documentation.html">Docs</a></li>
+                    <li><a href="download.html" class="btn-primary active">Download</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Download Hero -->
+    <section class="download-hero">
+        <div class="container">
+            <div class="download-content">
+                <h1>Download Smart Timetable Optimizer</h1>
+                <p class="version-info">
+                    <span class="version-badge">v1.0.0</span>
+                    <span class="release-date">Released: February 2025</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Options -->
+    <section class="download-section">
+        <div class="container">
+            <div class="download-grid">
+                <!-- Windows Download -->
+                <div class="download-card featured">
+                    <div class="download-header">
+                        <i class="fab fa-windows"></i>
+                        <h2>Windows</h2>
+                        <span class="recommended-badge">Recommended</span>
+                    </div>
+                    <div class="download-body">
+                        <p class="os-version">Windows 10, 11 (64-bit)</p>
+                        <ul class="download-features">
+                            <li><i class="fas fa-check"></i> Standalone .exe file</li>
+                            <li><i class="fas fa-check"></i> No installation required</li>
+                            <li><i class="fas fa-check"></i> All dependencies bundled</li>
+                            <li><i class="fas fa-check"></i> Ready to use</li>
+                        </ul>
+                        <!-- ✅ CORRECTED URL - Changed "tag" to "download" -->
+                        
+                           <button class="btn btn-primary btn-lg download-btn" 
+                onclick="downloadFile('https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/releases/download/v1.0.0/SmartTimetable.exe', 'SmartTimetable.exe')"
+                style="width: 100%; border: none; cursor: pointer;">
+                            <i class="fas fa-download"></i> Download for Windows
+                            <span class="download-size">v1.0.0</span>
+                        </button>
+                        <p class="install-note">
+                            <i class="fas fa-info-circle"></i> 
+                            If Windows shows a warning, click "More info" → "Run anyway"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Linux Download (Coming Soon) -->
+                <div class="download-card">
+                    <div class="download-header">
+                        <i class="fab fa-linux"></i>
+                        <h2>Linux</h2>
+                    </div>
+                    <div class="download-body">
+                        <p class="os-version">Ubuntu 18.04+, Debian, Fedora</p>
+                        <ul class="download-features">
+                            <li><i class="fas fa-clock"></i> Coming soon</li>
+                            <li><i class="fas fa-info-circle"></i> AppImage format</li>
+                            <li><i class="fas fa-info-circle"></i> Portable executable</li>
+                            <li><i class="fas fa-info-circle"></i> Run anywhere</li>
+                        </ul>
+                        <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/releases" 
+                           class="btn btn-secondary btn-lg download-btn"
+                           target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Releases
+                            <span class="download-size">Soon</span>
+                        </a>
+                        <p class="install-note">
+                            <i class="fas fa-code"></i> 
+                            Or run from source with Python 3.8+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- macOS Download (Coming Soon) -->
+                <div class="download-card">
+                    <div class="download-header">
+                        <i class="fab fa-apple"></i>
+                        <h2>macOS</h2>
+                    </div>
+                    <div class="download-body">
+                        <p class="os-version">macOS 10.14 (Mojave) or later</p>
+                        <ul class="download-features">
+                            <li><i class="fas fa-clock"></i> Coming soon</li>
+                            <li><i class="fas fa-info-circle"></i> DMG installer</li>
+                            <li><i class="fas fa-info-circle"></i> Drag & drop</li>
+                            <li><i class="fas fa-info-circle"></i> Code signed</li>
+                        </ul>
+                        <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/releases" 
+                           class="btn btn-secondary btn-lg download-btn"
+                           target="_blank">
+                            <i class="fas fa-external-link-alt"></i> View Releases
+                            <span class="download-size">Soon</span>
+                        </a>
+                        <p class="install-note">
+                            <i class="fas fa-code"></i> 
+                            Or run from source with Python 3.8+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Source Code -->
+                <div class="download-card">
+                    <div class="download-header">
+                        <i class="fas fa-code"></i>
+                        <h2>Source Code</h2>
+                    </div>
+                    <div class="download-body">
+                        <p class="os-version">Build from source (All platforms)</p>
+                        <ul class="download-features">
+                            <li><i class="fas fa-check"></i> Full source code</li>
+                            <li><i class="fas fa-check"></i> Python 3.8+ required</li>
+                            <li><i class="fas fa-check"></i> MIT License</li>
+                            <li><i class="fas fa-check"></i> Contribute on GitHub</li>
+                        </ul>
+                        <div class="source-buttons">
+                            <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/archive/refs/tags/v1.0.0.zip" 
+                               class="btn btn-outline btn-sm" 
+                               download>
+                                <i class="fas fa-file-archive"></i> Download ZIP
+                            </a>
+                            <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer" 
+                               class="btn btn-outline btn-sm" 
+                               target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                        <p class="install-cmd">
+                            <code>git clone https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer.git</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation Guide -->
+            <div class="installation-guide">
+                <h2><i class="fas fa-rocket"></i> Quick Start Guide</h2>
+                <div class="guide-steps">
+                    <div class="guide-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Download</h3>
+                            <p>Click the download button above for your operating system</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Run the Application</h3>
+                            <p>
+                                <strong>Windows:</strong> Double-click SmartTimetable.exe<br>
+                                <strong>Linux:</strong> <code>chmod +x file.AppImage && ./file.AppImage</code><br>
+                                <strong>macOS:</strong> Open DMG and drag to Applications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Login</h3>
+                            <p>Default credentials: <code>admin</code> / <code>admin123</code></p>
+                            <p class="warning"><i class="fas fa-exclamation-triangle"></i> Change password after first login!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Requirements -->
+            <div class="system-requirements">
+                <h2><i class="fas fa-desktop"></i> System Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="req-col">
+                        <h3>Minimum</h3>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10 / Ubuntu 18.04 / macOS 10.14</li>
+                            <li><strong>RAM:</strong> 4 GB</li>
+                            <li><strong>Storage:</strong> 200 MB</li>
+                            <li><strong>Display:</strong> 1280x720</li>
+                        </ul>
+                    </div>
+                    <div class="req-col">
+                        <h3>Recommended</h3>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 11 / Ubuntu 22.04 / macOS 12+</li>
+                            <li><strong>RAM:</strong> 8 GB or more</li>
+                            <li><strong>Storage:</strong> 500 MB (with data)</li>
+                            <li><strong>Display:</strong> 1920x1080 or higher</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust & Security -->
+            <div class="trust-section">
+                <h2><i class="fas fa-shield-alt"></i> Security & Trust</h2>
+                <div class="trust-cards">
+                    <div class="trust-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>100% Offline</h3>
+                        <p>All data stays on your computer. No cloud, no tracking, no data collection.</p>
+                    </div>
+                    <div class="trust-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Open Source</h3>
+                        <p>Full source code available on GitHub. Inspect, modify, or contribute.</p>
+                    </div>
+                    <div class="trust-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Verified Builds</h3>
+                        <p>All releases include SHA256 checksums for verification.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version History -->
+            <div class="version-history">
+                <h2><i class="fas fa-history"></i> Version History</h2>
+                <div class="version-item">
+                    <div class="version-header">
+                        <span class="version-number">v1.0.0</span>
+                        <span class="version-date">February 16, 2025</span>
+                        <span class="version-badge latest">Latest</span>
+                    </div>
+                    <div class="version-notes">
+                        <h4>Initial Release</h4>
+                        <ul>
+                            <li>✨ Core timetable generation with OR-Tools</li>
+                            <li>👥 Multi-user system (Admin/Teacher roles)</li>
+                            <li>📊 Constraint management (Hard/Soft)</li>
+                            <li>📄 PDF export functionality</li>
+                            <li>💾 SQLite and MySQL support</li>
+                            <li>🔐 Secure authentication with bcrypt</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/releases" 
+                   class="btn btn-outline" 
+                   target="_blank">
+                    <i class="fab fa-github"></i> View All Releases on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Smart Timetable</span>
+                    </div>
+                    <p>Intelligent academic timetable generation powered by AI optimization.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://github.com/SaiVardhanKallempudi/Smart_Timetable_Optimizer/issues" target="_blank">Report Issue</a></li>
+                        <li><a href="documentation.html">User Guide</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sai Vardhan Kallempudi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
