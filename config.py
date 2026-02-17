@@ -6,7 +6,7 @@ DB_CONFIG = {
     # MySQL settings (used only when engine == "mysql")
     "host": "127.0.0.1",
     "user": "root",
-    "password": "saivardhan@2004",
+    "password": "**********",
     "raise_on_warnings": True,
 }
 
